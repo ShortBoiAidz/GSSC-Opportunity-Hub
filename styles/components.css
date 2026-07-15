@@ -1,7 +1,7 @@
 /* IMAGES */
 .banner {
-  width: clamp(350px, 10%, 800px);
-  height: auto;
+  width: clamp(250px, 10%, 800px);
+  height: clamp(200px, 30%, 400px);
 }
 
 .divider {
@@ -12,7 +12,7 @@
 }
 
 /* BACKGROUNDS */
-.heading {
+.searchBox {
   background-color: hwb(172 2% 56%);
   box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
 
@@ -30,7 +30,7 @@
   margin-left: clamp(2em, 5%, 5em);
 
   height: clamp(575px, 100%, 800px);
-  width: fit-content;
+  width: clamp(150px, 50%, 500px);
 }
 
 /* TYPOGRAPHY */
@@ -60,4 +60,12 @@ button.submit {
   border-radius: 4px;
   display: flex;
   height: 2.5em;
+}
+
+.fa-bars {
+  display: none;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+}
+.fa-circle-xmark {
+  font-size: clamp(1.5rem, 1.3vw, 2rem);
 }

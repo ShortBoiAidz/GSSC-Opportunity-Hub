@@ -37,13 +37,17 @@ h1 {
 }
 
 h2 {
-  font: clamp(2em, 3em, 5em) var(--fontFamily);
+  font: clamp(0.2em, 3em, 3em) var(--fontFamily);
   font-weight: bold;
-    color: var(--grey);
-    margin: 0.1em;
+  color: var(--grey);
+  margin: 0.1em;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+li {
+  cursor: pointer;
 }

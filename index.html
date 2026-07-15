@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/styles/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&amp;display=swap" rel="stylesheet">
+  <script src="javascript/main.js"></script>
 
   <script src="https://kit.fontawesome.com/ef05b7579b.js" crossorigin="anonymous"></script>
 
@@ -25,7 +26,8 @@
   <img src="images/gsscBanner.webp" alt="GSSC Banner" class="banner">
   <div class="divider"></div>
   <nav>
-    <ul>
+    <ul class="sidebar">
+      <li onclick=closeSidebar()><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></li>
       <li><a href="#"><p class="active nav"><i class="fa-solid fa-house"></i><br>Home</p></a></li>
       <li><a href="#"><p class="nav"><i class="fa-solid fa-graduation-cap"></i><br>Academics</p></a></li>
       <li><a href="#"><p class="nav"><i class="fa-solid fa-briefcase"></i><br>Careers</p></a></li>
@@ -34,20 +36,32 @@
       <li><a href="#"><p class="nav"><i class="fa-solid fa-book-open"></i><br>Resources</p></a></li>
       <li><a href="#"><p class="nav"><i class="fa-solid fa-circle-info"></i><br>About</p></a></li>
     </ul>
+    <ul>
+      <li><a href="#"><p class="active nav hideOnMobile"><i class="fa-solid fa-house"></i><br>Home</p></a></li>
+      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-graduation-cap"></i><br>Academics</p></a></li>
+      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-briefcase"></i><br>Careers</p></a></li>
+      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-user-group"></i><br>Leadership & Services</p></a></li>
+      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-calendar"></i><br>Calendar</p></a></li>
+      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-book-open"></i><br>Resources</p></a></li>
+      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-circle-info"></i><br>About</p></a></li>
+      <li onclick=openSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
   </nav>
 </header>
 
-<section class="heading">
-  <img src="images/GSSC.png" alt="GSSC" class="headerBackdrop">
+<section>
+  <div class="searchBox">
+    <img src="images/GSSC.png" alt="GSSC" class="headerBackdrop">
 
-  <h1>Opportunity Hub</h1>
-  <h2>Discover Your<br> Next Opportunity</h2>
-  <p>Find scholarships, competitions, work experience,<br> leadership programs and more — all in one place.</p>
+    <h1>Opportunity Hub</h1>
+    <h2>Discover Your<br> Next Opportunity</h2>
+    <p>Find scholarships, competitions, work experience,<br> leadership programs and more — all in one place.</p>
 
-  <form class="searchForm">
-    <input type="text" placeholder="Search opportunities..." aria-label="Search opportunities" id="searchOpportunities">
-    <button type="submit" class="submit"><i class="fa-solid fa-search"></i></button>
-  </form>
+    <form class="searchForm">
+      <input type="text" placeholder="Search opportunities..." aria-label="Search opportunities" id="searchOpportunities">
+      <button type="submit" class="submit"><i class="fa-solid fa-search"></i></button>
+    </form>
+  </div>
 </section>
 
 </body>

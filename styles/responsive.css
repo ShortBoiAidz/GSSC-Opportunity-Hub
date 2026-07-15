@@ -1,0 +1,27 @@
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar li:not(:first-child, :nth-child(2)) {
+    border: 1px solid rgba(67, 66, 66, 0.2);
+  }
+}
+
+@media (max-width: 750px) {
+  h2 {
+    font-size: clamp(2em, 2vw, 2.5em);
+  }
+  p {
+    font-size: clamp(1em, 1.5vw, 2em);
+  }
+}
