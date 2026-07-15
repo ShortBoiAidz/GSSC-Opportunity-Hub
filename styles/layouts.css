@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav {
+  justify-content: space-evenly;
+  width: clamp(350px, 100vw, 200vw);
+  padding: 1rem 0;
+}
+
+.headerBackdrop {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  width: clamp(100vw, 100vw, 200vw);
+  max-height: 65%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style: none;
+}

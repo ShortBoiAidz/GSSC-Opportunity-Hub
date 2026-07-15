@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fontFamily: 'League Spartan', sans-serif;
+  --grey: rgb(207, 205, 205);
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* TYPOGRAPHY */
+p.nav {
+  font: clamp(1em, 1.5em, 2.5em) var(--fontFamily);
+  justify-content: center;
+  text-align: center;
+  color: black;
+  margin: 0.5em;
+}
+p {
+  font: clamp(1em, 1.5em, 2.5em) var(--fontFamily);
+  color: var(--grey);
+  flex-wrap: wrap;
+  line-height: 1.2em;
+}
+
+h1 {
+  font: clamp(0.5em, 1.3em, 3em) var(--fontFamily);
+  color: rgb(192, 126, 3);
+  margin-top: 1em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font: clamp(2em, 3em, 5em) var(--fontFamily);
+  font-weight: bold;
+    color: var(--grey);
+    margin: 0.1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

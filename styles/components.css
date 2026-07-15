@@ -1,0 +1,63 @@
+/* IMAGES */
+.banner {
+  width: clamp(350px, 10%, 800px);
+  height: auto;
+}
+
+.divider {
+  height: 150px;
+  width: 3px;
+  background-color: #ccc;
+  margin: 0 5em;
+}
+
+/* BACKGROUNDS */
+.heading {
+  background-color: hwb(172 2% 56%);
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  margin-left: clamp(2em, 5%, 5em);
+
+  height: clamp(575px, 100%, 800px);
+  width: fit-content;
+}
+
+/* TYPOGRAPHY */
+.active {
+  text-decoration: underline;
+}
+
+#searchOpportunities {
+  border: none;
+  outline: none;
+  width: stretch;
+  padding-left: 0.5em;
+}
+
+button.submit {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.searchForm {
+  margin-top: 1em;
+  width: stretch;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  display: flex;
+  height: 2.5em;
+}
