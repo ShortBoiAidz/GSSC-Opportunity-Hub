@@ -1,53 +1,136 @@
+/* Colors */
+:root {
+  --textColour: #f6f6f6;
+  --glass: rgba(61, 61, 61, 0.5);
+  --turqoise: rgb(0, 102, 85);
+  --orange: rgb(255, 132, 0);
+  --leagueSpartan:
+    "League Spartan",
+    "Comic Sans MS",
+    sans-serif;
+}
+
+/* Reset */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-:root {
-  --fontFamily: 'League Spartan', sans-serif;
-  --grey: rgb(207, 205, 205);
-}
-
+/* Base */
+html,
 body {
-  overflow-x: hidden;
   min-height: 100vh;
 }
 
-/* TYPOGRAPHY */
-p.nav {
-  font: clamp(1em, 1.5em, 2.5em) var(--fontFamily);
-  justify-content: center;
-  text-align: center;
-  color: black;
-  margin: 0.5em;
-}
-p {
-  font: clamp(1em, 1.5em, 2.5em) var(--fontFamily);
-  color: var(--grey);
-  flex-wrap: wrap;
-  line-height: 1.2em;
+body {
+  background-image: url("../images/GSSC.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-x: hidden;
+
+  font-family: var(--leagueSpartan);
 }
 
+/* Base Components */
+button {
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+
+  margin: 10px;
+  padding: clamp(5px, 2vw, 20px);
+
+  cursor: pointer;
+
+  border-style: none;
+
+  background-color: var(--turqoise)
+}
+
+nav {
+  position: absolute;
+  right: 10px;
+  top: 26%;
+  left: 1%;
+  width: 200px;
+}
+
+/* Typography */
 h1 {
-  font: clamp(0.5em, 1.3em, 3em) var(--fontFamily);
-  color: rgb(192, 126, 3);
+  font-size: clamp(30px, 4vw, 80px);
   margin-top: 1em;
-  line-height: 1.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  text-wrap: balance;
 }
 
 h2 {
-  font: clamp(0.2em, 3em, 3em) var(--fontFamily);
-  font-weight: bold;
-  color: var(--grey);
-  margin: 0.1em;
+  font-size: clamp(23px, 2vw, 30px);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+h3,
+sub {
+  font-size: clamp(20px, 2vw, 30px);
+}
+
+h3 {
+  margin: 2px;
+  color: var(--textColour);
+}
+
+h4 {
+  font-size: clamp(17px, 2vw, 23px);
+  line-height: clamp(40px, 2vw, 70px);
+  text-wrap: balance;
+}
+
+h5 {
+  font-size: clamp(12px, 5vw, 20px);
+  line-height: clamp(30px, 4vw, 40px);
+}
+
+h4,
+h5 {
+  margin: auto;
+}
+
+i {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: clamp(30px, 2vw, 45px);
+}
+
+p,
+h2,
+i {
+  color: var(--textColour);
+  font-family: var(--leagueSpartan);
+}
+
+p {
+  font-size: clamp(12.5px, 2vw, 15px);
+  text-wrap: balance;
 }
 
 li {
-  cursor: pointer;
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  list-style: none;
+}
+
+a {
+  color: var(--textColour);
+  text-decoration: none;
 }

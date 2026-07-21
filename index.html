@@ -1,68 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Minecraft, Server, Homepage, NoodleBox, Season 3, NBS3"
+    />
+    <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="copyright"
+      content="Copyright 2026 Aiden Thorpe. All rights reserved."
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Hub | Homepage</title>
 
-  <link rel="icon" type="image/x-icon" href="images/gsscLogo.png">
-  <link rel="stylesheet" href="/styles/base.css">
-  <link rel="stylesheet" href="/styles/components.css">
-  <link rel="stylesheet" href="/styles/layouts.css">
-  <link rel="stylesheet" href="/styles/fonts.css">
-  <link rel="stylesheet" href="/styles/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&amp;display=swap" rel="stylesheet">
-  <script src="javascript/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/gsscLogo.png" />
 
-  <script src="https://kit.fontawesome.com/ef05b7579b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Homepage | Opportunity Hub</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<body>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/components.css" />
+    <link rel="stylesheet" href="/styles/animations.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <link rel="stylesheet" href="/styles/other.css" />
 
-<header>
-  <img src="images/gsscBanner.webp" alt="GSSC Banner" class="banner">
-  <div class="divider"></div>
-  <nav>
-    <ul class="sidebar">
-      <li onclick=closeSidebar()><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></li>
-      <li><a href="#"><p class="active nav"><i class="fa-solid fa-house"></i><br>Home</p></a></li>
-      <li><a href="#"><p class="nav"><i class="fa-solid fa-graduation-cap"></i><br>Academics</p></a></li>
-      <li><a href="#"><p class="nav"><i class="fa-solid fa-briefcase"></i><br>Careers</p></a></li>
-      <li><a href="#"><p class="nav"><i class="fa-solid fa-user-group"></i><br>Leadership & Services</p></a></li>
-      <li><a href="#"><p class="nav"><i class="fa-solid fa-calendar"></i><br>Calendar</p></a></li>
-      <li><a href="#"><p class="nav"><i class="fa-solid fa-book-open"></i><br>Resources</p></a></li>
-      <li><a href="#"><p class="nav"><i class="fa-solid fa-circle-info"></i><br>About</p></a></li>
-    </ul>
-    <ul>
-      <li><a href="#"><p class="active nav hideOnMobile"><i class="fa-solid fa-house"></i><br>Home</p></a></li>
-      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-graduation-cap"></i><br>Academics</p></a></li>
-      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-briefcase"></i><br>Careers</p></a></li>
-      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-user-group"></i><br>Leadership & Services</p></a></li>
-      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-calendar"></i><br>Calendar</p></a></li>
-      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-book-open"></i><br>Resources</p></a></li>
-      <li><a href="#"><p class="nav hideOnMobile"><i class="fa-solid fa-circle-info"></i><br>About</p></a></li>
-      <li onclick=openSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-    </ul>
-  </nav>
-</header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/loader.js"></script>
+  </head>
 
-<section>
-  <div class="searchBox">
-    <img src="images/GSSC.png" alt="GSSC" class="headerBackdrop">
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-    <h1>Opportunity Hub</h1>
-    <h2>Discover Your<br> Next Opportunity</h2>
-    <p>Find scholarships, competitions, work experience,<br> leadership programs and more — all in one place.</p>
+    <div class="homepageContainer">
+      <nav>
+        <ul class="sidebar">
+          <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
+          <li><a href="index.html" class="navLink"><h4 class="active">Home</h4></a></li>
+          <li><a href="players.html" class="navLink"><h4>Upcoming</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Contact</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Gallery</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Roadmap</h4></a></li>
+          <li><a href="https://discord.gg/WKGu4864M5" class="navLink"><h4>Join Here</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
+        </ul>
 
-    <form class="searchForm">
-      <input type="text" placeholder="Search opportunities..." aria-label="Search opportunities" id="searchOpportunities">
-      <button type="submit" class="submit"><i class="fa-solid fa-search"></i></button>
-    </form>
-  </div>
-</section>
+        <ul class="mainNav">
+          <h3 class="navHeader gradient-text">Navigation</h3>
+          <div class="navDivider"></div>
+          <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
+          <li><a href="players.html" class="gradient-text navLink"><h4>Upcoming</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Contact</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Gallery</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Roadmap</h4></a></li>
+          <li><a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars" onclick=openSidebar()></i>
 
-</body>
+      <main>
+        <div class="content">
+          <img
+            src="images/gsscLogo.png"
+            alt="GSSC Logo"
+            class="logo"
+          />
+          <div class="mainCardParent">
+            <div class="homeCard">
+              <h1>Opportunity Hub</h1>
+
+              <br />
+
+              <sub>Be Respectful  Be Responsible  Be Your Best</sub>
+
+              <br />
+
+              <h4>Current Update: 0.0.0</h4>
+
+              <br />
+
+              <div class="buttonCardParent">
+                <div class="buttonCard" id="login">
+                  <h4>Log in</h4>
+                </div>
+
+                <div class="buttonCard" id="signup">
+                  <h4>Sign up</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="h2Card">
+              <button onclick="location.href = 'players.html'">
+                <h2>Find programs</h2>
+              </button>
+
+              <button onclick=notAvailable()>
+                <h2>Explore scholarships</h2>
+              </button>
+            </div>
+
+            <div class="mainCardH2">
+              <button onclick=notAvailable()>
+                <h2>Discover Work Experience</h2>
+              </button>
+
+              <button onclick=notAvailable()>
+                <h2>View Events & Camps</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
