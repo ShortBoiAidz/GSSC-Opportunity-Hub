@@ -6,20 +6,9 @@ main {
   justify-content: center;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-}
-
-.center {
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-}
-
-.playerName {
-  text-align: center;
-  margin-bottom: 10px;
+hr {
+  height: 1em;
+  display: inline-block;
 }
 
 .sidebar {
@@ -41,18 +30,23 @@ main {
   width: 100%;
 }
 
+.align-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mainNav {
   padding: clamp(10px, 2vw, 20px);
-  border-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   display: flex;
-  flex-direction: column;
-  width: fit-content;
+  flex-direction: row;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: clamp(20vw, 45vw, 45vw);
   justify-content: center;
 }
@@ -76,60 +70,6 @@ main {
   text-align: center;
 }
 
-.h2CardParent {
-  width: clamp(100px, 40vw, 1000px);
-  margin-top: clamp(20px, 2vw, 50px);
-  width: stretch;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.h2CardParent,
-.playerCard {
-  padding: clamp(10px, 2vw, 20px);
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.homeCard {
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-
-  align-items: center;
-  padding-bottom: clamp(10px, 4vw, 20px);
-  padding-top: 0;
-}
-
-.playerCardParent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: stretch;
-  gap: 20px;
-  margin-top: 50px;
-}
-
-.playerCard {
-  width: clamp(15em, 20em, 30em);
-  border-width: 2px;
-  border-style: solid;
-  justify-content: center;
-  align-items: center;
-  height: stretch;
-}
 
 .buttonCardParent {
   display: inline-flex;
@@ -162,28 +102,21 @@ main {
   margin-top: 0;
 }
 
-.playerInfoCard {
-  margin-left: 30px;
-  margin-right: 30px;
-
-  width: stretch;
-  text-align: center;
-
-  padding: clamp(10px, 2vw, 20px);
-  padding-left: clamp(20px, 4vw, 40px);
-  padding-right: clamp(20px, 4vw, 40px);
-
-  border-radius: 45px;
-  -webkit-border-radius: 45px;
-  -moz-border-radius: 45px;
-  -ms-border-radius: 45px;
-  -o-border-radius: 45px;
+.learnMoreButton {
+  background-color: var(--turquoise);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 2rem 0 2px 0;
+  display: flex;
 }
 
-.navDivider {
-  width: 100%;
-  height: 10px;
-  margin-top: 3px;
+.learnMoreButton:hover {
+  background-color: var(--turquoise);
+  opacity: 0.8;
 }
 
 .h2Card {
@@ -191,27 +124,124 @@ main {
   flex-direction: row;
 }
 
-/* IMAGES */
-.logoPlayers {
-  transform: translate(140%, -30%);
-  -webkit-transform: translate(140%, -30%);
-  -moz-transform: translate(140%, -30%);
-  -ms-transform: translate(140%, -30%);
-  -o-transform: translate(140%, -30%);
+.whiteCardParent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
+.whiteCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  bottom: 0;
+
+  padding: 1rem;
+  height: 60vh;
+  min-width: 100vw;
+}
+
+.searchArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  padding: 1rem;
+  width: auto;
+}
+
+input {
+  margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 10px;
+  width: clamp(200px, 50%, 300px);
+  box-sizing: border-box;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+select {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: var(--turquoise);
+  color: white;
+  width: clamp(200px, 50%, 300px);
+}
+select:nth-last-child(1) {
+  margin-right: 1em;
+}
+
+.scholarsBoxParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scholarsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 25px;
+  margin: 1rem;
+
+  width: auto;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.card {
+  width: auto;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.scholarshipsCardParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  margin-left: 50vw;
+  width: 100vw;
+}
+
+.scholarshipsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--glass);
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 1rem;
+
+  width: auto;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.scholarshipsCard > h1 {
+  font-size: clamp(3rem, 5vw, 10rem);
+  margin: 1rem;
+}
+
+/* IMAGES */
 .logo {
   width: 25%;
   height: auto;
   z-index: 999;
   cursor: pointer;
-}
-
-.playerHead {
-  display: flex;
-  border-radius: 50%;
-  overflow: hidden;
-  width: clamp(80px, 10vw, 150px);
 }
 
 .fa-bars {

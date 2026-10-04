@@ -2,8 +2,9 @@
 :root {
   --textColour: #f6f6f6;
   --glass: rgba(61, 61, 61, 0.5);
-  --turqoise: rgb(0, 102, 85);
+  --turquoise: rgb(0, 102, 85);
   --orange: rgb(255, 132, 0);
+  --lightTurquoise: rgb(0, 132, 117);
   --leagueSpartan:
     "League Spartan",
     "Comic Sans MS",
@@ -36,6 +37,7 @@ body {
   overflow-x: hidden;
 
   font-family: var(--leagueSpartan);
+  color: var(--textColour);
 }
 
 /* Base Components */
@@ -51,24 +53,27 @@ button {
 
   border-style: none;
 
-  background-color: var(--turqoise)
+  background-color: var(--turquoise)
 }
 
 nav {
   position: absolute;
-  right: 10px;
-  top: 26%;
-  left: 1%;
-  width: 200px;
+  top: 0%;
+  width: 100vw;
 }
 
 /* Typography */
 h1 {
   font-size: clamp(30px, 4vw, 80px);
   margin-top: 1em;
+  margin-bottom: 1rem;
   margin-right: 0.5em;
   margin-left: 0.5em;
   text-wrap: balance;
+}
+
+sub {
+  margin-bottom: 1rem;
 }
 
 h2 {

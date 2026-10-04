@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="GSSC, Greater Shepparton Secondary College"
+    />
+    <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="copyright"
+      content="Copyright 2026 Aiden Thorpe. All rights reserved."
+    />
+
+    <title>GSSC | Scholarships</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/gsscLogo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/components.css" />
+    <link rel="stylesheet" href="/styles/animations.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <link rel="stylesheet" href="/styles/other.css" />
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/loader.js"></script>
+  </head>
+
+  <body>
+    <style>
+      body {
+        background-image: linear-gradient(to bottom right, var(--turquoise), white);
+      }
+    </style>
+
+    <div class="content">
+
+      <nav>
+        <ul class="sidebar">
+          <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
+          <li><a href="/index.html" class="navLink"><h4>Home</h4></a></li>
+          <li><a href="./pages/upcoming.html" class="navLink"><h4>Upcoming</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Contact</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Work Experience</h4></a></li>
+          <li><a href="./pages/scholarships.html" class="navLink"><h4 class="active">Scholarships</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Events & Camps</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink" download><h4>Find Programs</h4></a></li>
+        </ul>
+
+        <ul class="mainNav">
+          <li><a href="/index.html" class="gradient-text navLink"><h4>Home</h4></a></li>
+          <li><a href="./upcoming.html" class="gradient-text navLink"><h4>Upcoming</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Contact</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Work Experience</h4></a></li>
+          <li><a href="./pages/scholarships.html" class="gradient-text navLink active"><h4>Scholarships</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Events & Camps</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Find Programs</h4></a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars" onclick=openSidebar()></i>
+
+      <main>
+
+        <div class="scholarshipsCardParent">
+          <div class="scholarshipsCard">
+            <h1>Scholarships</h1>
+            <sub>Invest in your future</sub>
+            <p>Explore a range of scholarships designed to support your educational journey.</p>
+          </div>
+        </div>
+
+        <div class="whiteCardParent">
+          <div class="whiteCard">
+
+            <div class="searchArea">
+              <input type="text" name="search" id="search" placeholder="Search scholarships...">
+
+              <select name="filterYearLevel" id="filterYearLevel">
+                <option value="">Year Level</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="international">International</option>
+              </select>
+
+              <select name="filterSubject" id="filterSubject">
+                <option value="">Subject</option>
+                <option value="science">Science</option>
+                <option value="arts">Arts</option>
+                <option value="commerce">Commerce</option>
+              </select>
+            </div>
+
+            <div class="scholarsBoxParent">
+              <div class="scholarsBox">
+                <div class="card">
+                  <h5>Scholarship Title 1</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Description for scholarship 1.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Scholarship Title 2</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Description for scholarship 2.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Scholarship Title 3</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Description for scholarship 3.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Scholarship Title 4</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Description for scholarship 4.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Scholarship Title 5</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Description for scholarship 5.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Scholarship Title 6</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Description for scholarship 6.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Scholarship Title 7</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Description for scholarship 7.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Scholarship Title 8</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Description for scholarship 8.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </body>
+</html>

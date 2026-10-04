@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="Minecraft, Server, Homepage, NoodleBox, Season 3, NBS3"
+      content="GSSC, Greater Shepparton Secondary College"
     />
     <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -48,61 +48,47 @@
   </head>
 
   <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-      <div class="loading">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
     <div class="homepageContainer">
       <nav>
         <ul class="sidebar">
           <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
           <li><a href="index.html" class="navLink"><h4 class="active">Home</h4></a></li>
-          <li><a href="players.html" class="navLink"><h4>Upcoming</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Upcoming</h4></a></li>
           <li><a onclick=notAvailable() class="navLink"><h4>Contact</h4></a></li>
-          <li><a onclick=notAvailable() class="navLink"><h4>Gallery</h4></a></li>
-          <li><a onclick=notAvailable() class="navLink"><h4>Roadmap</h4></a></li>
-          <li><a href="https://discord.gg/WKGu4864M5" class="navLink"><h4>Join Here</h4></a></li>
-          <li><a onclick=notAvailable() class="navLink" download><h4>Modrinth File</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Work Experience</h4></a></li>
+          <li><a href="pages/scholarships.html" class="navLink"><h4>Scholarships</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Events & Camps</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink" download><h4>Find Programs</h4></a></li>
         </ul>
 
         <ul class="mainNav">
-          <h3 class="navHeader gradient-text">Navigation</h3>
-          <div class="navDivider"></div>
           <li><a href="index.html" class="gradient-text navLink active"><h4>Home</h4></a></li>
-          <li><a href="players.html" class="gradient-text navLink"><h4>Upcoming</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Upcoming</h4></a></li>
           <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Contact</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Gallery</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Roadmap</h4></a></li>
-          <li><a href="https://discord.gg/WKGu4864M5" class="gradient-text navLink"><h4>Join Here</h4></a></li>
-          <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Modrinth File</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Work Experience</h4></a></li>
+          <li><a href="pages/scholarships.html" class="gradient-text navLink"><h4>Scholarships</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Events & Camps</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink" download><h4>Find Programs</h4></a></li>
         </ul>
       </nav>
       <i class="fa-solid fa-bars" onclick=openSidebar()></i>
 
       <main>
         <div class="content">
-          <img
-            src="images/gsscLogo.png"
-            alt="GSSC Logo"
-            class="logo"
-          />
+          <div class="align-items-container">
+            <img
+              src="images/gsscLogo.png"
+              alt="GSSC Logo"
+              class="logo"
+            />
+          </div>
           <div class="mainCardParent">
             <div class="homeCard">
               <h1>Opportunity Hub</h1>
 
               <br />
 
-              <sub>Be Respectful  Be Responsible  Be Your Best</sub>
-
-              <br />
-
-              <h4>Current Update: 0.0.0</h4>
+              <sub>Be Respectful <hr> Be Responsible <hr> Be Your Best</sub>
 
               <br />
 
@@ -118,11 +104,11 @@
             </div>
 
             <div class="h2Card">
-              <button onclick="location.href = 'players.html'">
+              <button onclick=notAvailable()>
                 <h2>Find programs</h2>
               </button>
 
-              <button onclick=notAvailable()>
+              <button onclick='location.href="pages/scholarships.html"'>
                 <h2>Explore scholarships</h2>
               </button>
             </div>

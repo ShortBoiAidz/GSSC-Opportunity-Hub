@@ -20,15 +20,26 @@
   background-color: var(--glass);
 }
 
-.buttonCard#login {
-  background-color: var(--turqoise);
-}
-.buttonCard#signup {
+.buttonCard {
   background-color: var(--textColour);
 }
+.buttonCard#login,
+.buttonCard#signup {
+  color: black;
+}
 
-.navDivider {
-  background-color: var(--orange);
+.card {
+  background-color: var(--lightTurquoise);
+  line-height: 1.5;
+}
+.card > p {
+  color: white;
+}
+.card > p.pricetag {
+  font-weight: bold;
+}
+.card > h5 {
+  font-size-adjust: 0.5;
 }
 
 .sidebar {
@@ -50,14 +61,14 @@
 
 /* Images */
 .fa-bars {
-  color: var(--darkGradPrim);
+  color: white;
   font-size: clamp(50px, 2vw, 50px);
 }
 
 .sidebarIcon {
-  color: var(--darkGradPrim);
+  color: white;
 }
 
 .fa-rectangle-xmark {
-  color: var(--darkGradPrim)
+  color: white;
 }
