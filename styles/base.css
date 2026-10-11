@@ -47,14 +47,17 @@ button {
   width: 100%;
   height: auto;
 
-  margin: 10px;
   padding: clamp(5px, 2vw, 20px);
 
   cursor: pointer;
 
   border-style: none;
 
-  background-color: var(--turquoise)
+  background-color: var(--turquoise);
+
+  &:not(.learnMoreButton) {
+    margin: 10px;
+  }
 }
 
 nav {

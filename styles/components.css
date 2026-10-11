@@ -31,15 +31,20 @@
 .card {
   background-color: var(--lightTurquoise);
   line-height: 1.5;
-}
-.card > p {
-  color: white;
-}
-.card > p.pricetag {
-  font-weight: bold;
-}
-.card > h5 {
-  font-size-adjust: 0.5;
+
+  & > p {
+    color: white;
+    margin-bottom: 10px;
+  }
+  & > p.pricetag {
+    font-weight: bold;
+  }
+  & > h5 {
+    font-size-adjust: 0.5;
+    margin: 0;
+    text-wrap: balance;
+    line-height: 1.5;
+  }
 }
 
 .sidebar {
