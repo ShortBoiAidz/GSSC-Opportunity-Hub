@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="GSSC, Greater Shepparton Secondary College"
+    />
+    <meta name="author" content="ShortBoiAidz, Aiden Thorpe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="copyright"
+      content="Copyright 2026 Aiden Thorpe. All rights reserved."
+    />
+
+    <title>GSSC | Scholarships</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/gsscLogo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../styles/base.css" />
+    <link rel="stylesheet" href="../styles/layout.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/animations.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/other.css" />
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../javascript/loader.js"></script>
+  </head>
+
+  <body>
+    <style>
+      body {
+        background-image: linear-gradient(to bottom right, var(--turquoise), white);
+      }
+    </style>
+
+    <div class="content">
+
+      <nav>
+        <ul class="sidebar">
+          <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
+          <li><a href="../index.html" class="navLink"><h4>Home</h4></a></li>
+          <li><a href="./upcoming.html" class="navLink"><h4>Upcoming</h4></a></li>
+          <li><a onclick=notAvailable() class="navLink"><h4>Application Help</h4></a></li>
+          <li><a href="https://www.gssccareers.com/" class="navLink"><h4>Work Experience</h4></a></li>
+          <li><a href="./scholarships.html" class="navLink"><h4>Scholarships</h4></a></li>
+          <li><a href="./programs.html" class="navLink"><h4>Programs & Camps</h4></a></li>
+          <li><a href="./competitions.html" class="navLink"><h4 class="active">Academic Competitions</h4></a></li>
+        </ul>
+
+        <ul class="mainNav">
+          <li><a href="../index.html" class="gradient-text navLink"><h4>Home</h4></a></li>
+          <li><a href="./upcoming.html" class="gradient-text navLink"><h4>Upcoming</h4></a></li>
+          <li><a onclick=notAvailable() class="gradient-text navLink"><h4>Application Help</h4></a></li>
+          <li><a href="https://www.gssccareers.com/" class="gradient-text navLink"><h4>Work Experience</h4></a></li>
+          <li><a href="./scholarships.html" class="gradient-text navLink"><h4>Scholarships</h4></a></li>
+          <li><a href="./programs.html" class="gradient-text navLink"><h4>Programs & Camps</h4></a></li>
+          <li><a href="./competitions.html" class="gradient-text navLink active"><h4>Academic Competitions</h4></a></li>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars" onclick=openSidebar()></i>
+
+      <main>
+
+        <div class="headingCardParent">
+          <div class="headingCard">
+            <h1 style="text-wrap: nowrap">Academic Competitions</h1>
+            <sub>Compete adademically</sub>
+            <p>Explore a range of competitions to fuel your competitive spirit</p>
+          </div>
+
+          <div class="whiteCard">
+
+            <div class="searchArea">
+              <input type="text" name="search" id="search" placeholder="Search scholarships...">
+
+              <select name="filterYearLevel" id="filterYearLevel">
+                <option value="">Year Level</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="international">International</option>
+              </select>
+
+              <select name="filterSubject" id="filterSubject">
+                <option value="">Subject</option>
+                <option value="science">Science</option>
+                <option value="arts">Arts</option>
+                <option value="commerce">Commerce</option>
+              </select>
+            </div>
+
+            <div class="scholarsBoxParent">
+              <div class="scholarsBox">
+                <div class="card">
+                  <h5>Australian Mathematics Competition (AMC)</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>No description.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>ICAS Mathematics</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>School nomination required.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>ICAS Science</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>School nomination required.</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Australian Biology Olympiad</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Years 9–12</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Australian Chemistry Olympiad</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Years 9–12</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Australian Physics Olympiad</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Years 9–12</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Australian Informatics Olympiad</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Years 9–12</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+
+                <div class="card">
+                  <h5>Australian Mathematical Olympiad</h5>
+                  <p class="pricetag">${price}</p>
+                  <p>Years 9–12</p>
+                  <button class="learnMoreButton">Learn More →</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </body>
+</html>

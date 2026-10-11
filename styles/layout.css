@@ -106,21 +106,16 @@ hr {
   flex-direction: row;
 }
 
-.whiteCardParent {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .whiteCard {
   background-color: white;
+
   display: flex;
   flex-direction: column;
-
   position: relative;
-  bottom: 0;
 
   padding: 1rem;
+  margin-top: clamp(10px, 2vh, 5vh);
+
   height: 60vh;
   min-width: 100vw;
 
@@ -156,9 +151,10 @@ select {
   background-color: var(--turquoise);
   color: white;
   width: clamp(200px, 50%, 300px);
-}
-select:nth-last-child(1) {
-  margin-right: 1em;
+
+  &:nth-last-child(1) {
+    margin-right: 1em;
+  }
 }
 
 .scholarsBoxParent {
@@ -210,17 +206,48 @@ select:nth-last-child(1) {
   }
 }
 
-.scholarshipsCardParent,
-.upcomingCardParent {
+.headingCardParent,
+.upcomingHeaderCardParent {
   display: flex;
   flex-direction: column;
+  margin-right: 0;
+
   align-items: center;
-  margin-top: 10vh;
-  margin-left: 50vw;
+  justify-content: center;
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.headingCardParent {
   width: 100vw;
 }
 
-.scholarshipsCard {
+.upcomingHeaderCard {
+  background-color: var(--glass);
+  border-radius: 25px;
+  padding: 2rem;
+  margin: 1rem;
+
+  width: auto;
+  text-align: center;
+
+  & > h1 {
+    font-size: clamp(2rem, 4vw, 7rem);
+    margin: 1rem;
+    text-wrap: nowrap;
+  }
+  & > p {
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    margin: 1rem;
+    text-wrap: nowrap;
+  }
+}
+
+.headingCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -237,41 +264,11 @@ select:nth-last-child(1) {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-.scholarshipsCard > h1 {
+.headingCard > h1 {
   font-size: clamp(3rem, 5vw, 10rem);
   margin: 1rem;
 }
 
-.upcomingCard {
-  background-color: var(--glass);
-  border-radius: 25px;
-  padding: 2rem;
-  margin: 1rem;
-
-  width: auto;
-  text-align: center;
-}
-.upcomingCard > h1 {
-  font-size: clamp(2rem, 4vw, 7rem);
-  margin: 1rem;
-  text-wrap: nowrap;
-}
-.upcomingCard > p {
-  font-size: clamp(0.5rem, 2vw, 1.5rem);
-  margin: 1rem;
-  text-wrap: nowrap;
-}
-
-.pinnedUpcomingTabParent {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-
-  top: 35%;
-  left: 0;
-
-  width: 100vw;
-}
 .pinnedUpcomingTab {
   display: flex;
   flex-direction: row;
@@ -314,19 +311,7 @@ select:nth-last-child(1) {
 }
 
 /* IMAGES */
-.calendarParent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100vw;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
 .calendar {
-  position: relative;
   margin: 0;
 }
 
