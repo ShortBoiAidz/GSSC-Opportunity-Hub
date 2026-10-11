@@ -253,6 +253,8 @@ select {
   align-items: center;
   justify-content: center;
 
+  text-align: center;
+
   background-color: var(--glass);
   border-radius: 25px;
   padding: 2rem;
@@ -307,6 +309,45 @@ select {
   }
   & > h3 {
     text-wrap: nowrap;
+  }
+}
+
+span {
+  display: flex;
+
+  & > h5 {
+    font-size-adjust: 0.65;
+  }
+}
+
+.helpCard {
+  display: flex;
+  padding-bottom: 1em;
+
+  text-align: center;
+  justify-content: space-evenly;
+
+  & > p {
+    font-size-adjust: 0.5;
+  }
+  & > i {
+    align-self: last baseline;
+  }
+}
+
+.supportCard {
+  justify-self: last baseline;
+  text-align: center;
+  width: max-content;
+  padding-bottom: 1rem;
+
+  & > p.contactStaff {
+    font-size-adjust: 0.5;
+
+    & > a, i {
+      color: blue;
+      cursor: pointer;
+    }
   }
 }
 
