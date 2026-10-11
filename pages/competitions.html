@@ -54,49 +54,107 @@
   <body>
     <style>
       body {
-        background-image: linear-gradient(to bottom right, var(--turquoise), white);
+        background-image: linear-gradient(
+          to bottom right,
+          var(--turquoise),
+          white
+        );
       }
     </style>
 
     <div class="content">
-
       <nav>
         <ul class="sidebar">
-          <i class="fa-regular fa-rectangle-xmark" onclick=closeSidebar()></i>
-          <li><a href="../index.html" class="navLink"><h4>Home</h4></a></li>
-          <li><a href="./upcoming.html" class="navLink"><h4>Upcoming</h4></a></li>
-          <li><a href="./help.html" class="navLink"><h4>Application Help</h4></a></li>
-          <li><a href="https://www.gssccareers.com/" class="navLink"><h4>Work Experience</h4></a></li>
-          <li><a href="./scholarships.html" class="navLink"><h4>Scholarships</h4></a></li>
-          <li><a href="./programs.html" class="navLink"><h4>Programs & Camps</h4></a></li>
-          <li><a href="./competitions.html" class="navLink"><h4 class="active">Academic Competitions</h4></a></li>
+          <i class="fa-regular fa-rectangle-xmark" onclick="closeSidebar()"></i>
+          <li>
+            <a href="../index.html" class="navLink"><h4>Home</h4></a>
+          </li>
+          <li>
+            <a href="./upcoming.html" class="navLink"><h4>Upcoming</h4></a>
+          </li>
+          <li>
+            <a href="./help.html" class="navLink"><h4>Application Help</h4></a>
+          </li>
+          <li>
+            <a href="https://www.gssccareers.com/" class="navLink"
+              ><h4>Work Experience</h4></a
+            >
+          </li>
+          <li>
+            <a href="./scholarships.html" class="navLink"
+              ><h4>Scholarships</h4></a
+            >
+          </li>
+          <li>
+            <a href="./programs.html" class="navLink"
+              ><h4>Programs & Camps</h4></a
+            >
+          </li>
+          <li>
+            <a href="./competitions.html" class="navLink"
+              ><h4 class="active">Academic Competitions</h4></a
+            >
+          </li>
         </ul>
 
         <ul class="mainNav">
-          <li><a href="../index.html" class="gradient-text navLink"><h4>Home</h4></a></li>
-          <li><a href="./upcoming.html" class="gradient-text navLink"><h4>Upcoming</h4></a></li>
-          <li><a href="./help.html" class="gradient-text navLink"><h4>Application Help</h4></a></li>
-          <li><a href="https://www.gssccareers.com/" class="gradient-text navLink"><h4>Work Experience</h4></a></li>
-          <li><a href="./scholarships.html" class="gradient-text navLink"><h4>Scholarships</h4></a></li>
-          <li><a href="./programs.html" class="gradient-text navLink"><h4>Programs & Camps</h4></a></li>
-          <li><a href="./competitions.html" class="gradient-text navLink active"><h4>Academic Competitions</h4></a></li>
+          <li>
+            <a href="../index.html" class="gradient-text navLink"
+              ><h4>Home</h4></a
+            >
+          </li>
+          <li>
+            <a href="./upcoming.html" class="gradient-text navLink"
+              ><h4>Upcoming</h4></a
+            >
+          </li>
+          <li>
+            <a href="./help.html" class="gradient-text navLink"
+              ><h4>Application Help</h4></a
+            >
+          </li>
+          <li>
+            <a href="https://www.gssccareers.com/" class="gradient-text navLink"
+              ><h4>Work Experience</h4></a
+            >
+          </li>
+          <li>
+            <a href="./scholarships.html" class="gradient-text navLink"
+              ><h4>Scholarships</h4></a
+            >
+          </li>
+          <li>
+            <a href="./programs.html" class="gradient-text navLink"
+              ><h4>Programs & Camps</h4></a
+            >
+          </li>
+          <li>
+            <a href="./competitions.html" class="gradient-text navLink active"
+              ><h4>Academic Competitions</h4></a
+            >
+          </li>
         </ul>
       </nav>
-      <i class="fa-solid fa-bars" onclick=openSidebar()></i>
+      <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
 
       <main>
-
         <div class="headingCardParent">
           <div class="headingCard">
             <h1 style="text-wrap: nowrap">Academic Competitions</h1>
             <sub>Compete academically</sub>
-            <p>Explore a range of competitions to fuel your competitive spirit</p>
+            <p>
+              Explore a range of competitions to fuel your competitive spirit
+            </p>
           </div>
 
           <div class="whiteCard">
-
             <div class="searchArea">
-              <input type="text" name="search" id="search" placeholder="Search scholarships...">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search competitions..."
+              />
 
               <select name="filterYearLevel" id="filterYearLevel">
                 <option value="">Year Level</option>
@@ -118,58 +176,117 @@
                 <div class="card">
                   <h5>Australian Mathematics Competition (AMC)</h5>
                   <p class="pricetag">Years 9–12</p>
-                  <button class="learnMoreButton" onclick="location.href='https://amt.edu.au/amc'">Learn More →</button>
+                  <button
+                    class="learnMoreButton"
+                    onclick="location.href = 'https://amt.edu.au/amc'"
+                  >
+                    Learn More →
+                  </button>
                 </div>
 
                 <div class="card">
                   <h5>ICAS Mathematics</h5>
                   <p class="pricetag">Years 9–12</p>
                   <p>School nomination required.</p>
-                  <button class="learnMoreButton" onclick="location.href='https://www.icasassessments.com/products-icas/subjects/mathematics'">Learn More →</button>
+                  <button
+                    class="learnMoreButton"
+                    onclick="
+                      location.href =
+                        'https://www.icasassessments.com/products-icas/subjects/mathematics'
+                    "
+                  >
+                    Learn More →
+                  </button>
                 </div>
 
                 <div class="card">
                   <h5>ICAS Science</h5>
                   <p class="pricetag">Years 9–12</p>
                   <p>School nomination required.</p>
-                  <button class="learnMoreButton" onclick="location.href='https://www.icasassessments.com/products-icas/subjects/science'">Learn More →</button>
+                  <button
+                    class="learnMoreButton"
+                    onclick="
+                      location.href =
+                        'https://www.icasassessments.com/products-icas/subjects/science'
+                    "
+                  >
+                    Learn More →
+                  </button>
                 </div>
 
                 <div class="card">
                   <h5>Australian Biology Olympiad</h5>
                   <p class="pricetag">Years 9–12</p>
-                  <button class="learnMoreButton" onclick="location.href='https://asi.edu.au/program/australian-science-olympiads'">Learn More →</button>
+                  <button
+                    class="learnMoreButton"
+                    onclick="
+                      location.href =
+                        'https://asi.edu.au/program/australian-science-olympiads'
+                    "
+                  >
+                    Learn More →
+                  </button>
                 </div>
 
                 <div class="card">
                   <h5>Australian Chemistry Olympiad</h5>
                   <p class="pricetag">Years 9–12</p>
-                  <button class="learnMoreButton" onclick="location.href='https://asi.edu.au/program/australian-science-olympiads'">Learn More →</button>
+                  <button
+                    class="learnMoreButton"
+                    onclick="
+                      location.href =
+                        'https://asi.edu.au/program/australian-science-olympiads'
+                    "
+                  >
+                    Learn More →
+                  </button>
                 </div>
 
                 <div class="card">
                   <h5>Australian Physics Olympiad</h5>
                   <p class="pricetag">Years 9–12</p>
-                  <button class="learnMoreButton" onclick="location.href='https://asi.edu.au/program/australian-science-olympiads'">Learn More →</button>
+                  <button
+                    class="learnMoreButton"
+                    onclick="
+                      location.href =
+                        'https://asi.edu.au/program/australian-science-olympiads'
+                    "
+                  >
+                    Learn More →
+                  </button>
                 </div>
 
                 <div class="card">
                   <h5>Australian Informatics Olympiad</h5>
                   <p class="pricetag">Years 9–12</p>
-                  <button class="learnMoreButton" onclick="location.href='https://asi.edu.au/program/australian-science-olympiads'">Learn More →</button>
+                  <button
+                    class="learnMoreButton"
+                    onclick="
+                      location.href =
+                        'https://asi.edu.au/program/australian-science-olympiads'
+                    "
+                  >
+                    Learn More →
+                  </button>
                 </div>
 
                 <div class="card">
                   <h5>Australian Mathematical Olympiad</h5>
                   <p class="pricetag">Years 9–12</p>
-                  <button class="learnMoreButton" onclick="location.href='https://asi.edu.au/program/australian-science-olympiads'">Learn More →</button>
+                  <button
+                    class="learnMoreButton"
+                    onclick="
+                      location.href =
+                        'https://asi.edu.au/program/australian-science-olympiads'
+                    "
+                  >
+                    Learn More →
+                  </button>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-
       </main>
     </div>
   </body>
