@@ -21,7 +21,7 @@
 
 @media (max-height: 800px) {
   .pinnedUpcomingTab {
-    padding: 1em;
+    padding: 12vh 1em 12vh 1em;
 
     &&.pinnedCard {
       margin: 1em;
